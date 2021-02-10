@@ -26,6 +26,9 @@ h1, h2 {
 .numb-sirs {
   font-size: large;
   font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .content {
   display: flex;
@@ -74,5 +77,14 @@ h1, h2 {
   transition: transform 1s;
 }
 .card:hover > .fa-check-circle{
+  visibility: visible;
+}
+
+p:hover ~ .card > img {
+  transform: scaleX(-1);
+  transition: transform 1s;
+}
+
+p:hover ~ .card > .fa-check-circle {
   visibility: visible;
 }
