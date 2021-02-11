@@ -23,6 +23,9 @@ h1, h2 {
   margin: 15px;
   font-size: x-large;
 }
+a {
+  text-decoration: none;
+}
 .numb-sirs {
   font-size: large;
   font-weight: bold;
@@ -82,11 +85,11 @@ h1, h2 {
   visibility: visible;
 }
 
-p:hover ~ .card > img {
+a:hover ~ .card > img {
   transform: scaleX(-1);
   transition: transform 1s;
 }
 
-p:hover ~ .card > .fa-check-circle {
+a:hover ~ .card > .fa-check-circle {
   visibility: visible;
 }
